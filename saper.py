@@ -1,4 +1,4 @@
-"""Игра Сапер."""
+"""Игра Сапер1."""
 from random import randint
 
 import pygame as pg
@@ -201,8 +201,6 @@ def handle_keys(board):
         if event.type == pg.MOUSEBUTTONDOWN:
             mouse_x = event.pos[0]
             mouse_y = event.pos[1]
-            # x = mouse_x - mouse_x % GRID_SIZE
-            # y = mouse_y - mouse_y % GRID_SIZE
             x = mouse_x // GRID_SIZE
             y = mouse_y // GRID_SIZE
             # Если нажата правая кнопка мыши.
